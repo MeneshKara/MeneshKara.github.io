@@ -1,1 +1,1 @@
-Refresh trigger for GitHub Pages deployment and HTTPS certificate re-evaluation on 2026-10-13.
+Refresh trigger for GitHub Pages deployment and HTTPS certificate re-evaluation on 2026-10-14 after DNSSEC disable and GitHub Pages IPv6 AAAA records were added.

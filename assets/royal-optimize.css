@@ -1,0 +1,31 @@
+/* Royal Boutique Lodge performance, accessibility and desktop refinements */
+:root{--focus:#f1bd5c}
+a,button{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.hero-price{display:inline-flex;align-items:center;gap:6px;margin:-7px 0 17px;padding:7px 13px;border:1px solid rgba(225,177,99,.72);border-radius:999px;background:rgba(10,12,14,.48);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);color:#fff;font-size:13px;font-weight:700;letter-spacing:.02em;box-shadow:0 5px 18px rgba(0,0,0,.15)}
+.hero-price strong{color:#efbf62;font-size:15px}
+.section-link-row{display:flex;justify-content:flex-end;margin-top:12px}
+.section-link-row a{font-weight:800;color:#9a5c19;text-decoration:underline;text-underline-offset:4px}
+main>section:not(.hero){content-visibility:auto;contain-intrinsic-size:1px 760px}
+.room-card img,.gallery-strip img{transition:transform .35s ease}
+@media(min-width:981px){
+  .rooms>.shell,.amenities>.shell,.gallery-section>.shell,.rates>.shell,.location>.shell,footer>.shell{width:min(1900px,96vw)}
+  .rooms{padding-top:42px;padding-bottom:38px}
+  .rooms-grid{grid-template-rows:280px 280px;gap:12px}
+  .gallery-strip{gap:10px}
+  .gallery-strip figure{height:230px}
+  .rate-grid{gap:16px}
+  .rate-card{min-height:245px}
+  .map-card{min-height:270px}
+  .room-card:hover img,.gallery-strip figure:hover img{transform:scale(1.018)}
+}
+@media(max-width:600px){
+  .hero-price{font-size:13px;margin:-5px 0 16px;padding:7px 12px}
+  .hero-price strong{font-size:15px}
+  .section-link-row{justify-content:flex-start;margin-top:11px}
+  .section-link-row a{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .room-card img,.gallery-strip img{transition:none}
+}

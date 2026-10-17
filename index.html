@@ -12,7 +12,16 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" as="image" href="https://static.wixstatic.com/media/af0e87_8715b4ec02104548b24187a600ce87ef~mv2.webp" fetchpriority="high">
-  <link rel="stylesheet" href="/assets/royal-home.css">
+  <link rel="stylesheet" href="/assets/royal-home.css?v=20261017-2316">
+  <style>
+    @media(max-width:600px){
+      .rooms-grid{grid-template-columns:1fr 1fr!important;grid-template-rows:230px 230px 165px!important}
+      .rooms-grid>.room-main{grid-column:1/-1!important;grid-row:1!important;width:100%!important}
+      .rooms-grid>.room-tall{grid-column:1/-1!important;grid-row:2!important;width:100%!important}
+      .rooms-grid>.room-card:nth-child(3){grid-column:1!important;grid-row:3!important}
+      .rooms-grid>.room-card:nth-child(4){display:block!important;grid-column:2!important;grid-row:3!important}
+    }
+  </style>
   <meta property="og:locale" content="en_ZW">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Royal Boutique Lodge | Hillside, Harare">
